@@ -1,7 +1,4 @@
 {
-  "title": "Welcome to Premium",
-  "plans": [
-    { "name": "Basic", "price": "5 USD", "features": ["Feature A", "Feature B"] },
-    { "name": "Pro", "price": "10 USD", "features": ["Feature A", "Feature B", "Feature C"] }
-  ]
+  "title": "6Tube",
+  "authorvideopromotional": ""
 }
