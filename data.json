@@ -3,7 +3,9 @@
   "authorvideopromotional": "https://dev-zone-developer.github.io/6tube/video1.mp4",
   "author" : "https://dev-zone-developer.github.io/6tube/author.jpeg",
   "version": {
-
+      
+      "3.0": "https://example.com/6tube_v3.apk",
+      "2.0": "https://example.com/6tube_v2.apk",
       "1.0": "https://example.com/6tube_v1.apk"
     }
 }
