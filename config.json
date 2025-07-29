@@ -3,7 +3,6 @@
   "authorvideopromotional": "https://dev-zone-developer.github.io/6tube/video4.mp4",
   "author" : "https://dev-zone-developer.github.io/6tube/author.jpeg",
   "version": {
-      "1.30" : "https://example.com/6tube_v1.apk",
       "1.01" : "https://683347f6dd6bf8ff95b5a23d--visionary-gingersnap-4dcaa4.netlify.app/6%20tube%20v1.01.apk",
       "1.0": "https://example.com/6tube_v1.apk"
     }
