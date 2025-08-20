@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirector</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height:90vh;">
+        <h1 id="status">Fetching Original URL...</h1>
+    </div>
+
+
+    <script>
+        // Extract query parameters
+        let params = new URLSearchParams(window.location.search);
+
+        // Get value of "d"
+        let dValue = params.get("d");
+
+        if (dValue) {
+            try {
+                // Decode Base64 back to normal URL
+                let decodedUrl = atob(dValue);
+                // If missing protocol, add https:// by default
+                if (!/^https?:\/\//i.test(decodedUrl)) {
+                    decodedUrl = "https://" + decodedUrl;
+                }
+
+                console.log("Decoded URL:", decodedUrl);
+
+                // Update message
+                document.getElementById("status").innerText = "Redirecting...";
+
+                // Redirect
+                setTimeout(() => {
+                    window.location.href = decodedUrl;
+                }, 2000);
+            } catch (e) {
+                document.getElementById("status").innerText = "Invalid URL parameter!";
+            }
+        } else {
+            document.getElementById("status").innerText = "No redirect URL provided.";
+        }
+    </script>
+</body>
+
+</html>
