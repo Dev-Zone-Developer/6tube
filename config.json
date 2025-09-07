@@ -5,6 +5,10 @@
   "version": {
       "1.01" : "https://683347f6dd6bf8ff95b5a23d--visionary-gingersnap-4dcaa4.netlify.app/6%20tube%20v1.01.apk",
       "1.0": "https://example.com/6tube_v1.apk"
-    }
+    },
+  "size" : {
+    "1.01" : "35.04MB",
+    "1.01" : "35.04MB",
+  }
   
 }
